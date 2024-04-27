@@ -1,4 +1,4 @@
-import { WEEK_DAYS } from "./constants"
+import { WEEK_DAYS } from './constants'
 
 export function getISOWeekDateInfo(dateInput: string): {
   weekNbr: number
@@ -26,7 +26,3 @@ export function getISOWeekDateInfo(dateInput: string): {
   // Return the result object
   return { weekNbr, weekDay }
 }
-
-// Example usage:
-const isoDateInfo = getISOWeekDateInfo('2024-04-27')
-console.log(isoDateInfo) // Should output: { weekNbr: 17, weekDay: 'saturday' 

@@ -2135,6 +2135,11 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
+"@types/capitalize@^2.0.2":
+  "integrity" "sha512-J3I2HyJL4ui26Nwg6fQHx+1pg4Mn0i25T2Q1DIE1fyfySERXlT7j0F06gI52COlt8J26YETAWUCzrWNH/F/PeA=="
+  "resolved" "https://registry.npmjs.org/@types/capitalize/-/capitalize-2.0.2.tgz"
+  "version" "2.0.2"
+
 "@types/chai@^4.3.14":
   "integrity" "sha512-Wj71sXE4Q4AkGdG9Tvq1u/fquNz9EdG4LIJMwVVII7ashjD/8cf8fyIfJAjRr6YcsXnSE8cOGQPq1gqeR8z+3w=="
   "resolved" "https://registry.npmjs.org/@types/chai/-/chai-4.3.14.tgz"
@@ -2619,6 +2624,11 @@
   "integrity" "sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001612.tgz"
   "version" "1.0.30001612"
+
+"capitalize@^2.0.4":
+  "integrity" "sha512-wcSyiFqXRYyCoqu0o0ekXzJAKCLMkqWS5QWGlgTJFJKwRmI6pzcN2hBl5VPq9RzLW5Uf4FF/V/lcFfjCtVak2w=="
+  "resolved" "https://registry.npmjs.org/capitalize/-/capitalize-2.0.4.tgz"
+  "version" "2.0.4"
 
 "chai@^5.1.0":
   "integrity" "sha512-kDZ7MZyM6Q1DhR9jy7dalKohXQ2yrlXkk59CR52aRKxJrobmlBNqnFQxX9xOX8w+4mz8SYlKJa/7D7ddltFXCw=="

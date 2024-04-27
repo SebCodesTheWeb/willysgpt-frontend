@@ -11,6 +11,7 @@ import {
 import type { AggregableFoodKeys, FoodItem } from '../types'
 import { uniqBy, prop } from 'ramda'
 import { CalendarOverview } from './calendar-overview'
+import { PDFDownload } from './pdf-download'
 
 export interface OverviewProps {
   data: FoodItem[]
@@ -22,7 +23,7 @@ const getNbrTimesWentTowillys = (data: FoodItem[]) => {
   return uniqueWillysVisits.length
 }
 
-const labelMap = {
+export const labelMap = {
   price: 'Price',
   quantity: 'Purchased items',
 }
@@ -30,9 +31,10 @@ const labelMap = {
 export const Overview = ({ data }: OverviewProps) => {
   const nbrTimesToWillys = getNbrTimesWentTowillys(data)
   const [splitBy, setSplitBy] = useState<AggregableFoodKeys>('quantity')
+  const [activeFoodItem, setActiveFoodItem] = useState<FoodItem | null>(null)
 
   return (
-    <Stack justifyContent={'start'}>
+    <Stack justifyContent={'start'} spacing="4">
       <Box w='max-content'>
         <H3>You went to Willys {nbrTimesToWillys} times this year</H3>
       </Box>
@@ -51,7 +53,12 @@ export const Overview = ({ data }: OverviewProps) => {
         <Box w='max-content'>
           <Label size='md'>{labelMap[splitBy]}</Label>
         </Box>
-        <CalendarOverview data={data} splitBy={splitBy} />
+        <CalendarOverview
+          data={data}
+          splitBy={splitBy}
+          setActiveFoodItem={setActiveFoodItem}
+        />
+        {activeFoodItem && <PDFDownload foodItem={activeFoodItem} />} 
       </VStack>
     </Stack>
   )

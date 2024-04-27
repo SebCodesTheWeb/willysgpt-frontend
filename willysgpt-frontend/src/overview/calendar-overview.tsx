@@ -2,15 +2,20 @@ import { AggregableFoodKeys, FoodItem } from '../types'
 import { ResponsiveHeatMap } from '@nivo/heatmap'
 import { generateHeatMapDataForYear } from './calendar-overview-base-data'
 import { aggregateWeekData } from './aggregate-week-data'
-import capitalize from 'capitalize'
 import { Tag } from '@northlight/ui'
+import { labelMap } from './overview'
 
 export interface CalendarOverviewProps {
   data: FoodItem[]
   splitBy: AggregableFoodKeys
+  setActiveFoodItem: (foodItem: FoodItem) => void
 }
 
-export const CalendarOverview = ({ data, splitBy }: CalendarOverviewProps) => {
+export const CalendarOverview = ({
+  data,
+  splitBy,
+  setActiveFoodItem,
+}: CalendarOverviewProps) => {
   const aggregatedData = aggregateWeekData(data, splitBy)
   const calendarData = generateHeatMapDataForYear(2024, aggregatedData)
 
@@ -19,6 +24,12 @@ export const CalendarOverview = ({ data, splitBy }: CalendarOverviewProps) => {
   return (
     <ResponsiveHeatMap
       data={calendarData}
+      onClick={(v) => {
+        console.log(parseInt(v.data.x))
+        const weekNbr = parseInt((v.data.x.match(/\d+/) || [])[0] as string, 10)
+
+        setActiveFoodItem(aggregatedData[v.serieId][weekNbr] as FoodItem)
+      }}
       margin={{ top: 60, right: 90, bottom: 60, left: 90 }}
       valueFormat='>-.2s'
       axisTop={{
@@ -59,7 +70,7 @@ export const CalendarOverview = ({ data, splitBy }: CalendarOverviewProps) => {
           tickSpacing: 4,
           tickOverlap: false,
           tickFormat: '>-.2s',
-          title: capitalize(splitBy),
+          title: labelMap[splitBy],
           titleAlign: 'start',
           titleOffset: 4,
         },
