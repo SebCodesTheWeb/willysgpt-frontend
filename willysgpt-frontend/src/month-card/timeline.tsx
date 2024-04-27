@@ -15,13 +15,14 @@ export const Timeline = ({ data }: MonthCardProps) => {
   return (
     <Stack>
       {years.map((year) => (
-        <Stack spacing='4' justifyContent={'start'}>
+        <Stack spacing='4' justifyContent={'start'} key={year}>
           <Box w='max-content'>
             <H3>{year} in Review</H3>
           </Box>
           <Stack spacing='8' px='16' justifyContent={'start'} w='full'>
             {keys(splitData[year]).map((month) => (
               <MonthCard
+                key={month}
                 monthData={values(splitData[year][month]) as FoodItem[]}
                 monthName={month as string}
               />

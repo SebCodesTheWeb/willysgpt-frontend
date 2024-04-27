@@ -16,4 +16,4 @@ export type FoodItem = {
   id: string // UID for the item of this specific purchase
 }
 
-
+export type AggregableFoodKeys = 'price' | 'quantity'

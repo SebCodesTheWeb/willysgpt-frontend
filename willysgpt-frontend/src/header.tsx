@@ -8,7 +8,7 @@ export const Header = () => {
       p='8'
       borderBottomWidth='xs'
       borderBottomStyle='solid'
-      borderBottomColor='red.600'
+      borderBottomColor='red.500'
       position="sticky"
       top="0"
       bgColor="mono.white"
