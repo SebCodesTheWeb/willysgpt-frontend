@@ -1,0 +1,1046 @@
+[
+  {
+    "productName": "Tomater",
+    "category": "Grönsaker",
+    "price": 25,
+    "quantity": 3,
+    "date": "2024-04-01",
+    "receiptId": "REC123456",
+    "id": "UID0001"
+  },
+  {
+    "productName": "Kycklingbröst",
+    "category": "Kött",
+    "price": 45,
+    "quantity": 2,
+    "date": "2024-04-02",
+    "receiptId": "REC123457",
+    "id": "UID0002"
+  },
+  {
+    "productName": "Mjölk",
+    "category": "Mejeri",
+    "price": 15,
+    "quantity": 1,
+    "date": "2024-04-03",
+    "receiptId": "REC123458",
+    "id": "UID0003"
+  },
+  {
+    "productName": "Chokladkaka",
+    "category": "Godis",
+    "price": 20,
+    "quantity": 4,
+    "date": "2024-04-04",
+    "receiptId": "REC123459",
+    "id": "UID0004"
+  },
+  {
+    "productName": "Apelsinjuice",
+    "category": "Dryck",
+    "price": 30,
+    "quantity": 2,
+    "date": "2024-04-05",
+    "receiptId": "REC123460",
+    "id": "UID0005"
+  },
+  {
+    "productName": "Nötmix",
+    "category": "Annat",
+    "price": 22,
+    "quantity": 1,
+    "date": "2024-04-06",
+    "receiptId": "REC123461",
+    "id": "UID0006"
+  },
+  {
+    "productName": "Morötter",
+    "category": "Grönsaker",
+    "price": 15,
+    "quantity": 5,
+    "date": "2024-04-07",
+    "receiptId": "REC123462",
+    "id": "UID0007"
+  },
+  {
+    "productName": "Fläskfilé",
+    "category": "Kött",
+    "price": 80,
+    "quantity": 1,
+    "date": "2024-04-08",
+    "receiptId": "REC123463",
+    "id": "UID0008"
+  },
+  {
+    "productName": "Ost",
+    "category": "Mejeri",
+    "price": 42,
+    "quantity": 1,
+    "date": "2024-04-09",
+    "receiptId": "REC123464",
+    "id": "UID0009"
+  },
+  {
+    "productName": "Godisremmar",
+    "category": "Godis",
+    "price": 10,
+    "quantity": 10,
+    "date": "2024-04-10",
+    "receiptId": "REC123465",
+    "id": "UID0010"
+  },
+  {
+    "productName": "Mineralvatten",
+    "category": "Dryck",
+    "price": 18,
+    "quantity": 6,
+    "date": "2024-04-11",
+    "receiptId": "REC123466",
+    "id": "UID0011"
+  },
+  {
+    "productName": "Bröd",
+    "category": "Annat",
+    "price": 25,
+    "quantity": 2,
+    "date": "2024-04-12",
+    "receiptId": "REC123467",
+    "id": "UID0012"
+  },
+  {
+    "productName": "Salladsmix",
+    "category": "Grönsaker",
+    "price": 28,
+    "quantity": 1,
+    "date": "2024-04-13",
+    "receiptId": "REC123468",
+    "id": "UID0013"
+  },
+  {
+    "productName": "Korv",
+    "category": "Kött",
+    "price": 35,
+    "quantity": 3,
+    "date": "2024-04-14",
+    "receiptId": "REC123469",
+    "id": "UID0014"
+  },
+  {
+    "productName": "Yoghurt",
+    "category": "Mejeri",
+    "price": 12,
+    "quantity": 4,
+    "date": "2024-04-15",
+    "receiptId": "REC123470",
+    "id": "UID0015"
+  },
+  {
+    "productName": "Chips",
+    "category": "Godis",
+    "price": 22,
+    "quantity": 2,
+    "date": "2024-04-16",
+    "receiptId": "REC123471",
+    "id": "UID0016"
+  },
+  {
+    "productName": "Grillkrydda",
+    "category": "Annat",
+    "price": 17,
+    "quantity": 1,
+    "date": "2024-04-17",
+    "receiptId": "REC123472",
+    "id": "UID0017"
+  },
+  {
+    "productName": "Paprika",
+    "category": "Grönsaker",
+    "price": 20,
+    "quantity": 3,
+    "date": "2024-04-18",
+    "receiptId": "REC123473",
+    "id": "UID0018"
+  },
+  {
+    "productName": "Nötkött",
+    "category": "Kött",
+    "price": 99,
+    "quantity": 1,
+    "date": "2024-04-19",
+    "receiptId": "REC123474",
+    "id": "UID0019"
+  },
+  {
+    "productName": "Smör",
+    "category": "Mejeri",
+    "price": 32,
+    "quantity": 2,
+    "date": "2024-04-20",
+    "receiptId": "REC123475",
+    "id": "UID0020"
+  },
+  {
+    "productName": "Lakrits",
+    "category": "Godis",
+    "price": 25,
+    "quantity": 5,
+    "date": "2024-04-21",
+    "receiptId": "REC123476",
+    "id": "UID0021"
+  },
+  {
+    "productName": "Lemonad",
+    "category": "Dryck",
+    "price": 15,
+    "quantity": 1,
+    "date": "2024-04-22",
+    "receiptId": "REC123477",
+    "id": "UID0022"
+  },
+  {
+    "productName": "Ägg",
+    "category": "Annat",
+    "price": 29,
+    "quantity": 1,
+    "date": "2024-04-23",
+    "receiptId": "REC123478",
+    "id": "UID0023"
+  },
+  {
+    "productName": "Gurka",
+    "category": "Grönsaker",
+    "price": 10,
+    "quantity": 2,
+    "date": "2024-04-24",
+    "receiptId": "REC123479",
+    "id": "UID0024"
+  },
+  {
+    "productName": "Hamburgare",
+    "category": "Kött",
+    "price": 55,
+    "quantity": 2,
+    "date": "2024-04-25",
+    "receiptId": "REC123480",
+    "id": "UID0025"
+  },
+  {
+    "productName": "Gräddfil",
+    "category": "Mejeri",
+    "price": 12,
+    "quantity": 3,
+    "date": "2024-04-26",
+    "receiptId": "REC123481",
+    "id": "UID0026"
+  },
+  {
+    "productName": "Jordgubbar",
+    "category": "Grönsaker",
+    "price": 39,
+    "quantity": 1,
+    "date": "2024-04-27",
+    "receiptId": "REC123482",
+    "id": "UID0027"
+  },
+  {
+    "productName": "Räkor",
+    "category": "Kött",
+    "price": 65,
+    "quantity": 1,
+    "date": "2024-04-28",
+    "receiptId": "REC123483",
+    "id": "UID0028"
+  },
+  {
+    "productName": "Grädde",
+    "category": "Mejeri",
+    "price": 22,
+    "quantity": 1,
+    "date": "2024-04-29",
+    "receiptId": "REC123484",
+    "id": "UID0029"
+  },
+  {
+    "productName": "Marabou mjölkchoklad",
+    "category": "Godis",
+    "price": 25,
+    "quantity": 3,
+    "date": "2024-04-30",
+    "receiptId": "REC123485",
+    "id": "UID0030"
+  },
+  {
+    "productName": "Cola",
+    "category": "Dryck",
+    "price": 20,
+    "quantity": 1,
+    "date": "2024-05-01",
+    "receiptId": "REC123486",
+    "id": "UID0031"
+  },
+  {
+    "productName": "Kexchoklad",
+    "category": "Godis",
+    "price": 12,
+    "quantity": 4,
+    "date": "2024-05-02",
+    "receiptId": "REC123487",
+    "id": "UID0032"
+  },
+  {
+    "productName": "Chips Sourcream",
+    "category": "Godis",
+    "price": 26,
+    "quantity": 2,
+    "date": "2024-05-03",
+    "receiptId": "REC123488",
+    "id": "UID0033"
+  },
+  {
+    "productName": "Hallon",
+    "category": "Grönsaker",
+    "price": 30,
+    "quantity": 2,
+    "date": "2024-05-04",
+    "receiptId": "REC123489",
+    "id": "UID0034"
+  },
+  {
+    "productName": "Torskfilé",
+    "category": "Kött",
+    "price": 55,
+    "quantity": 1,
+    "date": "2024-05-05",
+    "receiptId": "REC123490",
+    "id": "UID0035"
+  },
+  {
+    "productName": "Proteinmilkshake",
+    "category": "Mejeri",
+    "price": 18,
+    "quantity": 1,
+    "date": "2024-05-06",
+    "receiptId": "REC123491",
+    "id": "UID0036"
+  },
+  {
+    "productName": "Sparris",
+    "category": "Grönsaker",
+    "price": 28,
+    "quantity": 2,
+    "date": "2024-06-10",
+    "receiptId": "REC123492",
+    "id": "UID0037"
+  },
+  {
+    "productName": "Lammstek",
+    "category": "Kött",
+    "price": 175,
+    "quantity": 1,
+    "date": "2024-06-24",
+    "receiptId": "REC123493",
+    "id": "UID0038"
+  },
+  {
+    "productName": "Brieost",
+    "category": "Mejeri",
+    "price": 45,
+    "quantity": 1,
+    "date": "2024-07-08",
+    "receiptId": "REC123494",
+    "id": "UID0039"
+  },
+  {
+    "productName": "Gelehallon",
+    "category": "Godis",
+    "price": 30,
+    "quantity": 3,
+    "date": "2024-07-15",
+    "receiptId": "REC123495",
+    "id": "UID0040"
+  },
+  {
+    "productName": "Iste persika",
+    "category": "Dryck",
+    "price": 20,
+    "quantity": 2,
+    "date": "2024-07-22",
+    "receiptId": "REC123496",
+    "id": "UID0041"
+  },
+  {
+    "productName": "Rågbröd",
+    "category": "Annat",
+    "price": 32,
+    "quantity": 2,
+    "date": "2024-08-05",
+    "receiptId": "REC123497",
+    "id": "UID0042"
+  },
+  {
+    "productName": "Körsbär",
+    "category": "Grönsaker",
+    "price": 59,
+    "quantity": 1,
+    "date": "2024-08-19",
+    "receiptId": "REC123498",
+    "id": "UID0043"
+  },
+  {
+    "productName": "Ankbröst",
+    "category": "Kött",
+    "price": 90,
+    "quantity": 1,
+    "date": "2024-09-01",
+    "receiptId": "REC123499",
+    "id": "UID0044"
+  },
+  {
+    "productName": "Havremjölk",
+    "category": "Mejeri",
+    "price": 23,
+    "quantity": 3,
+    "date": "2024-09-15",
+    "receiptId": "REC123500",
+    "id": "UID0045"
+  },
+  {
+    "productName": "Fruktrullar",
+    "category": "Godis",
+    "price": 19,
+    "quantity": 5,
+    "date": "2024-09-30",
+    "receiptId": "REC123501",
+    "id": "UID0046"
+  },
+  {
+    "productName": "Bell Pepper",
+    "category": "Grönsaker",
+    "price": 8,
+    "quantity": 3,
+    "date": "2024-02-27",
+    "receiptId": "MNO123",
+    "id": "31"
+  },
+  {
+    "productName": "Salmon",
+    "category": "Kött",
+    "price": 150,
+    "quantity": 2,
+    "date": "2024-03-15",
+    "receiptId": "PQR456",
+    "id": "32"
+  },
+  {
+    "productName": "Eggs",
+    "category": "Mejeri",
+    "price": 12,
+    "quantity": 1,
+    "date": "2024-03-30",
+    "receiptId": "STU789",
+    "id": "33"
+  },
+  {
+    "productName": "Popcorn",
+    "category": "Godis",
+    "price": 10,
+    "quantity": 2,
+    "date": "2024-04-10",
+    "receiptId": "VWX012",
+    "id": "34"
+  },
+  {
+    "productName": "Iced Tea",
+    "category": "Dryck",
+    "price": 7,
+    "quantity": 4,
+    "date": "2024-04-25",
+    "receiptId": "YZA345",
+    "id": "35"
+  },
+  {
+    "productName": "Zucchini",
+    "category": "Grönsaker",
+    "price": 6,
+    "quantity": 2,
+    "date": "2024-05-05",
+    "receiptId": "BCD678",
+    "id": "36"
+  },
+  {
+    "productName": "Shrimp",
+    "category": "Kött",
+    "price": 120,
+    "quantity": 1,
+    "date": "2024-05-20",
+    "receiptId": "EFG901",
+    "id": "37"
+  },
+  {
+    "productName": "Yogurt Drink",
+    "category": "Mejeri",
+    "price": 10,
+    "quantity": 3,
+    "date": "2024-06-10",
+    "receiptId": "HIJ234",
+    "id": "38"
+  },
+  {
+    "productName": "Gummy Worms",
+    "category": "Godis",
+    "price": 8,
+    "quantity": 2,
+    "date": "2024-06-25",
+    "receiptId": "KLM567",
+    "id": "39"
+  },
+  {
+    "productName": "Lemon Soda",
+    "category": "Dryck",
+    "price": 5,
+    "quantity": 1,
+    "date": "2024-07-10",
+    "receiptId": "NOP890",
+    "id": "40"
+  },
+  {
+    "productName": "Cucumber",
+    "category": "Grönsaker",
+    "price": 4,
+    "quantity": 2,
+    "date": "2024-07-20",
+    "receiptId": "QRS123",
+    "id": "41"
+  },
+  {
+    "productName": "Bacon",
+    "category": "Kött",
+    "price": 80,
+    "quantity": 1,
+    "date": "2024-08-05",
+    "receiptId": "TUV456",
+    "id": "42"
+  },
+  {
+    "productName": "Cheesecake",
+    "category": "Mejeri",
+    "price": 30,
+    "quantity": 1,
+    "date": "2024-08-15",
+    "receiptId": "WXY789",
+    "id": "43"
+  },
+  {
+    "productName": "Cotton Candy",
+    "category": "Godis",
+    "price": 5,
+    "quantity": 3,
+    "date": "2024-09-01",
+    "receiptId": "ZAB012",
+    "id": "44"
+  },
+  {
+    "productName": "Apple Juice",
+    "category": "Dryck",
+    "price": 10,
+    "quantity": 2,
+    "date": "2024-09-20",
+    "receiptId": "CDE345",
+    "id": "45"
+  },
+  {
+    "productName": "Corn",
+    "category": "Grönsaker",
+    "price": 3,
+    "quantity": 4,
+    "date": "2024-10-05",
+    "receiptId": "FGH678",
+    "id": "46"
+  },
+  {
+    "productName": "Tofu",
+    "category": "Kött",
+    "price": 15,
+    "quantity": 1,
+    "date": "2024-10-15",
+    "receiptId": "IJK901",
+    "id": "47"
+  },
+  {
+    "productName": "Mozzarella",
+    "category": "Mejeri",
+    "price": 20,
+    "quantity": 1,
+    "date": "2024-11-01",
+    "receiptId": "LMN234",
+    "id": "48"
+  },
+  {
+    "productName": "Licorice",
+    "category": "Godis",
+    "price": 5,
+    "quantity": 2,
+    "date": "2024-11-20",
+    "receiptId": "OPQ567",
+    "id": "49"
+  },
+  {
+    "productName": "Hot Chocolate",
+    "category": "Dryck",
+    "price": 8,
+    "quantity": 2,
+    "date": "2024-12-05",
+    "receiptId": "RST890",
+    "id": "50"
+  },
+  {
+    "productName": "Morotsjuice",
+    "category": "Dryck",
+    "price": 25,
+    "quantity": 2,
+    "date": "2024-10-10",
+    "receiptId": "REC123502",
+    "id": "UID0047"
+  },
+  {
+    "productName": "Müsli",
+    "category": "Annat",
+    "price": 38,
+    "quantity": 1,
+    "date": "2024-10-17",
+    "receiptId": "REC123503",
+    "id": "UID0048"
+  },
+  {
+    "productName": "Kiwi",
+    "category": "Grönsaker",
+    "price": 15,
+    "quantity": 6,
+    "date": "2024-10-24",
+    "receiptId": "REC123504",
+    "id": "UID0049"
+  },
+  {
+    "productName": "Kalkonbröst",
+    "category": "Kött",
+    "price": 63,
+    "quantity": 1,
+    "date": "2024-11-05",
+    "receiptId": "REC123505",
+    "id": "UID0050"
+  },
+  {
+    "productName": "Camembert",
+    "category": "Mejeri",
+    "price": 50,
+    "quantity": 1,
+    "date": "2024-11-12",
+    "receiptId": "REC123506",
+    "id": "UID0051"
+  },
+  {
+    "productName": "Vattenmelon",
+    "category": "Godis",
+    "price": 29,
+    "quantity": 0.5,
+    "date": "2024-11-19",
+    "receiptId": "REC123507",
+    "id": "UID0052"
+  },
+  {
+    "productName": "Kaffe",
+    "category": "Dryck",
+    "price": 79,
+    "quantity": 1,
+    "date": "2024-11-26",
+    "receiptId": "REC123508",
+    "id": "UID0053"
+  },
+  {
+    "productName": "Lingonsylt",
+    "category": "Annat",
+    "price": 45,
+    "quantity": 1,
+    "date": "2024-12-03",
+    "receiptId": "REC123509",
+    "id": "UID0054"
+  },
+  {
+    "productName": "Aubergine",
+    "category": "Grönsaker",
+    "price": 24,
+    "quantity": 2,
+    "date": "2024-12-10",
+    "receiptId": "REC123510",
+    "id": "UID0055"
+  },
+  {
+    "productName": "Entrecôte",
+    "category": "Kött",
+    "price": 129,
+    "quantity": 1,
+    "date": "2024-12-17",
+    "receiptId": "REC123511",
+    "id": "UID0056"
+  },
+  {
+    "productName": "Potato",
+    "category": "Grönsaker",
+    "price": 6,
+    "quantity": 5,
+    "date": "2024-12-20",
+    "receiptId": "UVW123",
+    "id": "51"
+  },
+  {
+    "productName": "Turkey",
+    "category": "Kött",
+    "price": 100,
+    "quantity": 1,
+    "date": "2024-01-05",
+    "receiptId": "XYZ456",
+    "id": "52"
+  },
+  {
+    "productName": "Margarine",
+    "category": "Mejeri",
+    "price": 10,
+    "quantity": 2,
+    "date": "2024-01-20",
+    "receiptId": "ABC789",
+    "id": "53"
+  },
+  {
+    "productName": "Caramel Popcorn",
+    "category": "Godis",
+    "price": 12,
+    "quantity": 3,
+    "date": "2024-02-05",
+    "receiptId": "DEF012",
+    "id": "54"
+  },
+  {
+    "productName": "Lemonade",
+    "category": "Dryck",
+    "price": 6,
+    "quantity": 4,
+    "date": "2024-02-20",
+    "receiptId": "GHI345",
+    "id": "55"
+  },
+  {
+    "productName": "Onion",
+    "category": "Grönsaker",
+    "price": 5,
+    "quantity": 3,
+    "date": "2024-03-05",
+    "receiptId": "JKL678",
+    "id": "56"
+  },
+  {
+    "productName": "Pork Ribs",
+    "category": "Kött",
+    "price": 120,
+    "quantity": 2,
+    "date": "2024-03-20",
+    "receiptId": "MNO901",
+    "id": "57"
+  },
+  {
+    "productName": "Whipped Cream",
+    "category": "Mejeri",
+    "price": 8,
+    "quantity": 1,
+    "date": "2024-04-05",
+    "receiptId": "PQR234",
+    "id": "58"
+  },
+  {
+    "productName": "Jelly Beans",
+    "category": "Godis",
+    "price": 7,
+    "quantity": 2,
+    "date": "2024-04-20",
+    "receiptId": "STU567",
+    "id": "59"
+  },
+  {
+    "productName": "Iced Coffee",
+    "category": "Dryck",
+    "price": 10,
+    "quantity": 1,
+    "date": "2024-05-05",
+    "receiptId": "VWX890",
+    "id": "60"
+  },
+  {
+    "productName": "Carrots",
+    "category": "Grönsaker",
+    "price": 4,
+    "quantity": 3,
+    "date": "2024-05-20",
+    "receiptId": "YZA123",
+    "id": "61"
+  },
+  {
+    "productName": "Lamb Chops",
+    "category": "Kött",
+    "price": 140,
+    "quantity": 2,
+    "date": "2024-06-05",
+    "receiptId": "BCD456",
+    "id": "62"
+  },
+  {
+    "productName": "Buttermilk",
+    "category": "Mejeri",
+    "price": 6,
+    "quantity": 2,
+    "date": "2024-06-20",
+    "receiptId": "EFG789",
+    "id": "63"
+  },
+  {
+    "productName": "Chocolate Bar",
+    "category": "Godis",
+    "price": 5,
+    "quantity": 3,
+    "date": "2024-07-05",
+    "receiptId": "HIJ012",
+    "id": "64"
+  },
+  {
+    "productName": "Fruit Punch",
+    "category": "Dryck",
+    "price": 8,
+    "quantity": 1,
+    "date": "2024-07-20",
+    "receiptId": "KLM345",
+    "id": "65"
+  },
+  {
+    "productName": "Green Beans",
+    "category": "Grönsaker",
+    "price": 5,
+    "quantity": 2,
+    "date": "2024-08-05",
+    "receiptId": "NOP678",
+    "id": "66"
+  },
+  {
+    "productName": "Veal",
+    "category": "Kött",
+    "price": 130,
+    "quantity": 1,
+    "date": "2024-08-20",
+    "receiptId": "QRS901",
+    "id": "67"
+  },
+  {
+    "productName": "Cream Cheese",
+    "category": "Mejeri",
+    "price": 7,
+    "quantity": 1,
+    "date": "2024-09-05",
+    "receiptId": "TUV234",
+    "id": "68"
+  },
+  {
+    "productName": "Candy Corn",
+    "category": "Godis",
+    "price": 4,
+    "quantity": 3,
+    "date": "2024-09-20",
+    "receiptId": "WXYZ567",
+    "id": "69"
+  },
+  {
+    "productName": "Sparkling Water",
+    "category": "Dryck",
+    "price": 4,
+    "quantity": 6,
+    "date": "2024-10-05",
+    "receiptId": "ABCDE890",
+    "id": "70"
+  },
+  {
+    "productName": "Cauliflower",
+    "category": "Grönsaker",
+    "price": 7,
+    "quantity": 2,
+    "date": "2024-10-20",
+    "receiptId": "FGHI123",
+    "id": "71"
+  },
+  {
+    "productName": "Duck",
+    "category": "Kött",
+    "price": 110,
+    "quantity": 1,
+    "date": "2024-11-05",
+    "receiptId": "JKLM456",
+    "id": "72"
+  },
+  {
+    "productName": "Sour Cream",
+    "category": "Mejeri",
+    "price": 8,
+    "quantity": 1,
+    "date": "2024-11-20",
+    "receiptId": "MNOP789",
+    "id": "73"
+  },
+  {
+    "productName": "Toffee",
+    "category": "Godis",
+    "price": 6,
+    "quantity": 3,
+    "date": "2024-12-05",
+    "receiptId": "QRST012",
+    "id": "74"
+  },
+  {
+    "productName": "Green Tea",
+    "category": "Dryck",
+    "price": 5,
+    "quantity": 2,
+    "date": "2024-12-20",
+    "receiptId": "UVWX345",
+    "id": "75"
+  },
+  {
+    "productName": "Sweet Potato",
+    "category": "Grönsaker",
+    "price": 6,
+    "quantity": 3,
+    "date": "2024-01-05",
+    "receiptId": "YZAB678",
+    "id": "76"
+  },
+  {
+    "productName": "Buffalo",
+    "category": "Kött",
+    "price": 120,
+    "quantity": 1,
+    "date": "2024-01-20",
+    "receiptId": "CDEF901",
+    "id": "77"
+  },
+  {
+    "productName": "Almond Milk",
+    "category": "Mejeri",
+    "price": 9,
+    "quantity": 2,
+    "date": "2024-02-05",
+    "receiptId": "GHIJ234",
+    "id": "78"
+  },
+  {
+    "productName": "Cotton Candy",
+    "category": "Godis",
+    "price": 5,
+    "quantity": 3,
+    "date": "2024-02-20",
+    "receiptId": "KLMN567",
+    "id": "79"
+  },
+  {
+    "productName": "Mango Juice",
+    "category": "Dryck",
+    "price": 7,
+    "quantity": 1,
+    "date": "2024-03-05",
+    "receiptId": "OPQR890",
+    "id": "80"
+  },
+  {
+    "productName": "Broccolini",
+    "category": "Grönsaker",
+    "price": 8,
+    "quantity": 2,
+    "date": "2024-03-20",
+    "receiptId": "STUV123",
+    "id": "81"
+  },
+  {
+    "productName": "Quail",
+    "category": "Kött",
+    "price": 100,
+    "quantity": 1,
+    "date": "2024-04-05",
+    "receiptId": "WXYZ456",
+    "id": "82"
+  },
+  {
+    "productName": "Coconut Milk",
+    "category": "Mejeri",
+    "price": 10,
+    "quantity": 1,
+    "date": "2024-04-20",
+    "receiptId": "ABCDE789",
+    "id": "83"
+  },
+  {
+    "productName": "Fruit Snacks",
+    "category": "Godis",
+    "price": 4,
+    "quantity": 4,
+    "date": "2024-05-05",
+    "receiptId": "FGHI012",
+    "id": "84"
+  },
+  {
+    "productName": "Limeade",
+    "category": "Dryck",
+    "price": 6,
+    "quantity": 3,
+    "date": "2024-05-20",
+    "receiptId": "JKLM345",
+    "id": "85"
+  },
+  {
+    "productName": "Kale",
+    "category": "Grönsaker",
+    "price": 5,
+    "quantity": 2,
+    "date": "2024-06-05",
+    "receiptId": "MNOP678",
+    "id": "86"
+  },
+  {
+    "productName": "Vegetarian Sausage",
+    "category": "Kött",
+    "price": 15,
+    "quantity": 1,
+    "date": "2024-06-20",
+    "receiptId": "QRST901",
+    "id": "87"
+  },
+  {
+    "productName": "Hazelnut Spread",
+    "category": "Mejeri",
+    "price": 12,
+    "quantity": 1,
+    "date": "2024-07-05",
+    "receiptId": "UVWX234",
+    "id": "88"
+  },
+  {
+    "productName": "Jelly Babies",
+    "category": "Godis",
+    "price": 5,
+    "quantity": 2,
+    "date": "2024-07-20",
+    "receiptId": "YZAB567",
+    "id": "89"
+  },
+  {
+    "productName": "Lemon Soda",
+    "category": "Dryck",
+    "price": 4,
+    "quantity": 4,
+    "date": "2024-08-05",
+    "receiptId": "CDEF890",
+    "id": "90"
+  }
+]
