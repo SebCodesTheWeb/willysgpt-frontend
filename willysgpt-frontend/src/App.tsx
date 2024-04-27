@@ -41,10 +41,10 @@ function App() {
           </TabList>
           <TabPanels>
             <TabPanel p='4'>
-              <Timeline data={data} />
+              <Overview data={data} />
             </TabPanel>
             <TabPanel p='4'>
-              <Overview data={data} />
+              <Timeline data={data} />
             </TabPanel>
           </TabPanels>
         </Tabs>
