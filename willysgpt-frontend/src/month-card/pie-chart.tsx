@@ -146,7 +146,7 @@ export const PieChart = ({ data, splitBy = 'price' }: PieChartProps) => {
       ]}
       tooltip={({ datum }) => (
         <Tag colorScheme="red">
-          {`${datum.id}: ${datum.value} ${splitBy === 'price' ? 'kr' : 'st'}`}
+          {`${datum.id}: ${datum.value} ${splitBy === 'price' ? 'kr' : 'items'}`}
         </Tag>
       )}
     />

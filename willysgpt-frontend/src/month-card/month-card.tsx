@@ -1,6 +1,6 @@
 import { getTotalSpent } from './get-total-spent'
 import type { FoodItem } from '../types'
-import { H4, Box, Stack, H1, Label, HStack } from '@northlight/ui'
+import { H4, Box, Stack, H1, Label, HStack, VStack } from '@northlight/ui'
 import { PieChart } from './pie-chart'
 
 export interface MonthCardProps {
@@ -32,18 +32,26 @@ export const MonthCard = ({ monthData, monthName }: MonthCardProps) => {
             <Box w='max-content'>
               <Label size='md'>Total spend:</Label>
             </Box>
-            <Box w='max-content' bgColor="red.500" borderRadius="md" p="1">
-              <H1 sx={{color: 'white'}}>{totalSpent} kr</H1>
+            <Box w='max-content' bgColor='red.500' p='1'>
+              <H1 sx={{ color: 'white', fontFamily: 'gotham' }}>
+                {totalSpent} kr
+              </H1>
             </Box>
           </Stack>
         </Stack>
-        <HStack h="full" w="full">
-          <Box h='full' w='50%'>
+        <HStack h='full' w='full'>
+          <VStack h='full' w='50%' spacing='0'>
+            <Box w='max-content'>
+              <Label size='md'>Price</Label>
+            </Box>
             <PieChart data={monthData} splitBy='price' />
-          </Box>
-          <Box h='full' w='50%'>
-            <PieChart data={monthData} splitBy='quantity' />
-          </Box>
+          </VStack>
+            <VStack h='full' w='50%' spacing='0'>
+              <Box w='max-content'>
+                <Label size='md'>Purchased items</Label>
+              </Box>
+              <PieChart data={monthData} splitBy='quantity' />
+            </VStack>
         </HStack>
       </HStack>
     </Stack>
