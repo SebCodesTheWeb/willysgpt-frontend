@@ -8,7 +8,7 @@ const overrides = {
         'red': {
             ...palette['red'],
             500: 'rgb(230, 0, 25)',
-        }
+        },
     }
 }
 

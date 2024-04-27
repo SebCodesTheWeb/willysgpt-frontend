@@ -4,11 +4,11 @@ import { splitDataByMonth } from './split-data-by-month'
 import { keys, values } from 'ramda'
 import { MonthCard } from './month-card'
 
-export interface MonthCardProps {
+export interface TimelineProps {
   data: FoodItem[]
 }
 
-export const Timeline = ({ data }: MonthCardProps) => {
+export const Timeline = ({ data }: TimelineProps) => {
   const splitData = splitDataByMonth(data)
   const years = keys(splitData)
 

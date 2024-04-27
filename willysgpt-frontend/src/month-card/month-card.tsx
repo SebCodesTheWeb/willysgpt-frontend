@@ -10,7 +10,6 @@ export interface MonthCardProps {
 
 export const MonthCard = ({ monthData, monthName }: MonthCardProps) => {
   const totalSpent = getTotalSpent(monthData)
-  console.log({ monthData, totalSpent })
 
   return (
     <Stack
