@@ -8,7 +8,11 @@ export const Header = () => {
       p='8'
       borderBottomWidth='xs'
       borderBottomStyle='solid'
-      borderBottomColor='border.default'
+      borderBottomColor='red.600'
+      position="sticky"
+      top="0"
+      bgColor="mono.white"
+      zIndex="maxnus"
     >
       <Box w='32'>
         <Image src={willysLogo} />
