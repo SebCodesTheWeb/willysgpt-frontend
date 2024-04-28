@@ -119,7 +119,7 @@ export const Overview = ({ data }: OverviewProps) => {
           <Label size='md'>{labelMap[splitBy]}</Label>
         </Box>
         <HStack w='full' spacing="0">
-          <Box w='full' h='380px'>
+          <Box w='full' h='250px'>
             <CalendarOverview
               data={filterData(data, filter)}
               splitBy={splitBy}

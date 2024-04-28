@@ -7,7 +7,7 @@ export const processData = (data: any): FoodItem[] => {
     return properdata.map((item: any) => ({
       productName: item.product,
       category: item?.food_type,
-      price: item.price,
+      price: Number(item.price.toFixed(2)),
       quantity: item.quantity,
       date: (data as any).date,
       receiptId: (data as any).uuid,

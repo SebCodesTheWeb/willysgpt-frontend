@@ -33,7 +33,7 @@ export const MonthCard = ({ monthData, monthName }: MonthCardProps) => {
             </Box>
             <Box w='max-content' bgColor='red.500' p='1'>
               <H1 sx={{ color: 'white', fontFamily: 'gotham' }}>
-                {totalSpent} kr
+                {Number(totalSpent.toFixed(2))} kr
               </H1>
             </Box>
           </Stack>

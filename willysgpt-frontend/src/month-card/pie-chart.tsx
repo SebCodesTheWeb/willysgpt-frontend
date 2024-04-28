@@ -42,6 +42,7 @@ export const PieChart = ({ data, splitBy = 'price' }: PieChartProps) => {
       }}
       arcLinkLabelsSkipAngle={10}
       arcLinkLabelsTextColor='#333333'
+      arcLabel={(d) => `${d.value} ${splitBy === 'price' ? 'kr' : 'items'}`}
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: 'color' }}
       arcLabelsSkipAngle={10}
