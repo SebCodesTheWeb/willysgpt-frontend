@@ -23,7 +23,7 @@ import { fetchEventSource } from '@microsoft/fetch-event-source'
 import { isJsonParsable } from './is-json-parsable'
 
 const RUNNING_IN_DEV = false
-const serverBaseURL = 'https://f018-212-181-59-82.ngrok-free.app'
+export const serverBaseURL = 'https://f018-212-181-59-82.ngrok-free.app'
 
 function App() {
   const [eventData, setEventData] = useState<FoodItem[]>([])
