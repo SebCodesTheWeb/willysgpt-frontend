@@ -115,6 +115,8 @@ function App() {
           variant='ghost'
           size='xs'
           p='2'
+          opacity='0'
+          _hover={{ opacity: '1' }}
           onClick={() => setRunningInDev((prev) => !prev)}
         >
           Toggle test data

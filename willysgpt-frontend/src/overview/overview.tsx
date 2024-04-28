@@ -116,18 +116,18 @@ export const Overview = ({ data }: OverviewProps) => {
       </HStack>
       <VStack w='full' spacing='0' h='380px'>
         <Box w='max-content'>
-          <Label size='md'>{labelMap[splitBy]}</Label>
+          <Label size='md'>{labelMap[splitBy]} 2024</Label>
         </Box>
-        <HStack w='full' spacing="0">
-          <Box w='full' h='250px'>
+        <HStack w='full' spacing="0" h="280px">
+          {/* <Box w='full' h='250px'> */}
             <CalendarOverview
               data={filterData(data, filter)}
               splitBy={splitBy}
               setActiveFoodItem={setActiveFoodItem}
               year={selectedYear}
             />
-          </Box>
-          <Box w='150px'>
+          {/* </Box> */}
+          {/* <Box w='150px'>
             <FlipButtonGroup
               size='sm'
               variant='brand'
@@ -141,8 +141,8 @@ export const Overview = ({ data }: OverviewProps) => {
                   key={`Filter-${year}`}
                 >{`${year}`}</FlipButton>
               ))}
-            </FlipButtonGroup>
-          </Box>
+            </FlipButtonGroup> */}
+          {/* </Box> */}
         </HStack>
         <Box pt='8'>
           {activeFoodItem && <PDFDownload foodItem={activeFoodItem} />}
