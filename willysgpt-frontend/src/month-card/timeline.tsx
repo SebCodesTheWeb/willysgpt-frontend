@@ -10,7 +10,7 @@ export interface TimelineProps {
 
 export const Timeline = ({ data }: TimelineProps) => {
   const splitData = splitDataByMonth(data)
-  const years = keys(splitData)
+  const years = keys(splitData).sort((a, b) => (b as number) - (a as number))
 
   return (
     <Stack>

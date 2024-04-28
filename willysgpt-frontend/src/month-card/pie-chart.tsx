@@ -2,9 +2,11 @@ import type { FoodItem, AggregableFoodKeys } from '../types'
 import { ResponsivePie } from '@nivo/pie'
 import { Tag } from '@northlight/ui'
 
+export type AggregationKeys = 'category' | 'productName'
 export interface PieChartProps {
   data: FoodItem[]
   splitBy: AggregableFoodKeys
+  aggregationKey: AggregationKeys
 }
 
 const aggregateCategories = (data: FoodItem[], splitBy: AggregableFoodKeys) => {
@@ -24,8 +26,51 @@ const aggregateCategories = (data: FoodItem[], splitBy: AggregableFoodKeys) => {
   }))
 }
 
-export const PieChart = ({ data, splitBy = 'price' }: PieChartProps) => {
-  const pieData = aggregateCategories(data, splitBy)
+const aggregateProducts = (data: FoodItem[], splitBy: AggregableFoodKeys) => {
+  const products = data.reduce((acc, item) => {
+    if (acc[item.productName]) {
+      acc[item.productName] += item[splitBy]
+    } else {
+      acc[item.productName] = item[splitBy]
+    }
+    return acc
+  }, {} as Record<string, number>)
+
+  return Object.entries(products).map(([productName, value]) => ({
+    id: productName,
+    label: productName,
+    value,
+  }))
+}
+
+const getAggregatedData = ({
+  data,
+  splitBy,
+  aggregationKey,
+}: {
+  data: FoodItem[]
+  splitBy: AggregableFoodKeys
+  aggregationKey: AggregationKeys
+}) => {
+  switch (aggregationKey) {
+    case 'category':
+      return aggregateCategories(data, splitBy)
+    case 'productName':
+      return aggregateProducts(data, splitBy)
+    default:
+      return null
+  }
+}
+
+export const PieChart = ({
+  data,
+  splitBy = 'price',
+  aggregationKey,
+}: PieChartProps) => {
+  // const pieData = aggregateCategories(data, splitBy, )
+  const pieData = getAggregatedData({ data, splitBy, aggregationKey })
+  console.log({ data, pieData })
+  if (!pieData) return null
 
   return (
     <ResponsivePie
@@ -40,6 +85,8 @@ export const PieChart = ({ data, splitBy = 'price' }: PieChartProps) => {
         from: 'color',
         modifiers: [['darker', 0.2]],
       }}
+      enableArcLabels={pieData.length < 15}
+      enableArcLinkLabels={pieData.length < 10}
       arcLinkLabelsSkipAngle={10}
       arcLinkLabelsTextColor='#333333'
       arcLabel={(d) => `${d.value} ${splitBy === 'price' ? 'kr' : 'items'}`}
@@ -120,34 +167,40 @@ export const PieChart = ({ data, splitBy = 'price' }: PieChartProps) => {
           id: 'lines',
         },
       ]}
-      legends={[
-        {
-          anchor: 'bottom',
-          direction: 'row',
-          justify: false,
-          translateX: 0,
-          translateY: 56,
-          itemsSpacing: 0,
-          itemWidth: 100,
-          itemHeight: 18,
-          itemTextColor: '#999',
-          itemDirection: 'left-to-right',
-          itemOpacity: 1,
-          symbolSize: 18,
-          symbolShape: 'circle',
-          effects: [
-            {
-              on: 'hover',
-              style: {
-                itemTextColor: '#000',
+      legends={
+        pieData.length < 5 
+          ? [
+              {
+                anchor: 'bottom',
+                direction: 'row',
+                justify: false,
+                translateX: 0,
+                translateY: 56,
+                itemsSpacing: 0,
+                itemWidth: 100,
+                itemHeight: 18,
+                itemTextColor: '#999',
+                itemDirection: 'left-to-right',
+                itemOpacity: 1,
+                symbolSize: 18,
+                symbolShape: 'circle',
+                effects: [
+                  {
+                    on: 'hover',
+                    style: {
+                      itemTextColor: '#000',
+                    },
+                  },
+                ],
               },
-            },
-          ],
-        },
-      ]}
+            ]
+          : []
+      }
       tooltip={({ datum }) => (
-        <Tag colorScheme="red">
-          {`${datum.id}: ${datum.value} ${splitBy === 'price' ? 'kr' : 'items'}`}
+        <Tag colorScheme='red'>
+          {`${datum.id}: ${datum.value} ${
+            splitBy === 'price' ? 'kr' : 'items'
+          }`}
         </Tag>
       )}
     />

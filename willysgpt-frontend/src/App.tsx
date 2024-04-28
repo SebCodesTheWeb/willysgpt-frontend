@@ -82,7 +82,7 @@ function App() {
     <Stack spacing='8' w='full'>
       <Header />
       <Stack px='16' spacing='0'>
-        <Box w='max-content'>
+        <Box w='max-content' onClick={() => setRunningInDev((prev) => !prev)}>
           <H2>Welcome Alexander!</H2>
         </Box>
         <Tabs
@@ -110,18 +110,6 @@ function App() {
           </TabPanels>
         </Tabs>
       </Stack>
-      <Box w='max-content'>
-        <Button
-          variant='ghost'
-          size='xs'
-          p='2'
-          opacity='0'
-          _hover={{ opacity: '1' }}
-          onClick={() => setRunningInDev((prev) => !prev)}
-        >
-          Toggle test data
-        </Button>
-      </Box>
     </Stack>
   )
 }
