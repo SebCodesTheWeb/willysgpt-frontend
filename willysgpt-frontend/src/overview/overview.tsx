@@ -58,7 +58,9 @@ export const Overview = ({ data }: OverviewProps) => {
           splitBy={splitBy}
           setActiveFoodItem={setActiveFoodItem}
         />
+        <Box pt="8">
         {activeFoodItem && <PDFDownload foodItem={activeFoodItem} />} 
+        </Box>
       </VStack>
     </Stack>
   )
