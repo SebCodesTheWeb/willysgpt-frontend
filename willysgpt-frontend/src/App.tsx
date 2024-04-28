@@ -22,7 +22,7 @@ import { processData } from './process-data'
 import { fetchEventSource } from '@microsoft/fetch-event-source'
 import { isJsonParsable } from './is-json-parsable'
 
-const RUNNING_IN_DEV = false
+const RUNNING_IN_DEV = true
 export const serverBaseURL = 'https://f018-212-181-59-82.ngrok-free.app'
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     if (runninInDev) return
     const fetchData = async () => {
-      await fetchEventSource(`${serverBaseURL}/test_stream`, {
+      await fetchEventSource(`${serverBaseURL}/process_stream`, {
         method: 'GET',
         headers: {
           Accept: 'text/event-stream',
