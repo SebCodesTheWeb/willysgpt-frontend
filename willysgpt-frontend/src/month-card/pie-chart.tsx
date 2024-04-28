@@ -72,7 +72,10 @@ export const PieChart = ({
 
   const roundedPieData = pieData.map((item) => ({
     ...item,
-    value: Number(item.value.toFixed(2)),
+    value:
+      typeof item.value === 'number'
+        ? Number(item.value.toFixed(2))
+        : item.value,
   }))
 
   return (
