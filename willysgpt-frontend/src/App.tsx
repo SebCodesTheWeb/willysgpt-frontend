@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import {
   HStack,
   H2,
-  Button,
   Stack,
   Box,
   Tabs,
@@ -43,7 +42,7 @@ function App() {
         headers: {
           Accept: 'text/event-stream',
         },
-        onopen(res) {
+        onopen(res): Promise<void> {
           if (res.ok && res.status === 200) {
             console.log('Connection made ', res)
           } else if (
@@ -53,6 +52,7 @@ function App() {
           ) {
             console.log('Client side error ', res)
           }
+          return Promise.resolve();
         },
         onmessage(event) {
           if (isJsonParsable(event.data)) {

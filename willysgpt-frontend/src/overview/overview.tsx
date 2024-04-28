@@ -11,7 +11,7 @@ import {
   Select,
 } from '@northlight/ui'
 import type { AggregableFoodKeys, FoodItem } from '../types'
-import { uniqBy, prop, map, uniq, compose } from 'ramda'
+import { uniqBy, prop, map, uniq } from 'ramda'
 import { CalendarOverview } from './calendar-overview'
 import { PDFDownload } from './pdf-download'
 import capitalize from 'capitalize'
@@ -31,9 +31,9 @@ const getNbrTimesWentTowillys = (data: FoodItem[]) => {
   return uniqueWillysVisits.length
 }
 
-function getYear(dateString: string) {
-  return Number(dateString.split('-')[0])
-}
+// function getYear(dateString: string) {
+//   return Number(dateString.split('-')[0])
+// }
 
 export const labelMap = {
   price: 'Price',
@@ -48,6 +48,8 @@ const filterData = (data: FoodItem[], filter: Filter) => {
   )
 }
 
+const selectedYear = 2024
+
 export const Overview = ({ data }: OverviewProps) => {
   const nbrTimesToWillys = getNbrTimesWentTowillys(data)
   const [splitBy, setSplitBy] = useState<AggregableFoodKeys>('price')
@@ -59,10 +61,10 @@ export const Overview = ({ data }: OverviewProps) => {
 
   const uniqueCategories = uniq(map(prop('category'), data))
   const uniqueProductnames = uniq(map(prop('productName'), data))
-  const uniqueYears = uniq(map(compose(getYear, prop('date')), data)).sort(
-    (a, b) => b - a
-  )
-  const [selectedYear, setSelectedYear] = useState(2024)
+  // const uniqueYears = uniq(map(compose(getYear, prop('date')), data)).sort(
+  //   (a, b) => b - a
+  // )
+  // const [selectedYear, setSelectedYear] = useState(2024)
 
   return (
     <Stack justifyContent={'start'} spacing='4'>
