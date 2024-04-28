@@ -67,9 +67,7 @@ export const PieChart = ({
   splitBy = 'price',
   aggregationKey,
 }: PieChartProps) => {
-  // const pieData = aggregateCategories(data, splitBy, )
   const pieData = getAggregatedData({ data, splitBy, aggregationKey })
-  console.log({ data, pieData })
   if (!pieData) return null
 
   return (
@@ -168,7 +166,7 @@ export const PieChart = ({
         },
       ]}
       legends={
-        pieData.length < 5 
+        pieData.length < 4
           ? [
               {
                 anchor: 'bottom',
@@ -176,7 +174,7 @@ export const PieChart = ({
                 justify: false,
                 translateX: 0,
                 translateY: 56,
-                itemsSpacing: 0,
+                itemsSpacing: 10,
                 itemWidth: 100,
                 itemHeight: 18,
                 itemTextColor: '#999',

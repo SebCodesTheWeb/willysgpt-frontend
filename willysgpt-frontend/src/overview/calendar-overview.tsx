@@ -16,9 +16,8 @@ export const CalendarOverview = ({
   data,
   splitBy,
   setActiveFoodItem,
-  year = 2024
+  year = 2024,
 }: CalendarOverviewProps) => {
-
   const aggregatedData = aggregateWeekData(data, splitBy, year)
   const calendarData = generateHeatMapDataForYear(year, aggregatedData)
 
@@ -28,7 +27,6 @@ export const CalendarOverview = ({
     <ResponsiveHeatMap
       data={calendarData}
       onClick={(v) => {
-        console.log(parseInt(v.data.x))
         const weekNbr = parseInt((v.data.x.match(/\d+/) || [])[0] as string, 10)
 
         setActiveFoodItem(aggregatedData[v.serieId][weekNbr] as FoodItem)

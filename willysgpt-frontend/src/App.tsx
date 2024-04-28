@@ -32,13 +32,11 @@ function App() {
   const handleNewEvent = (data: any) => {
     const parsedData = data
     const processedData = processData(parsedData)
-    console.log({ processedData })
     setEventData((prevData) => [...prevData, ...processedData])
   }
 
   useEffect(() => {
     if (runninInDev) return
-    console.log('running')
     const fetchData = async () => {
       await fetchEventSource(`${serverBaseURL}/test_stream`, {
         method: 'GET',
@@ -58,7 +56,6 @@ function App() {
         },
         onmessage(event) {
           if (isJsonParsable(event.data)) {
-            console.log('here')
             const parsedData = JSON.parse(event.data)
             handleNewEvent(parsedData)
           }

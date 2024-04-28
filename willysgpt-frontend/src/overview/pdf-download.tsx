@@ -34,7 +34,6 @@ export const PDFDownload = ({ foodItem }: PDFDownloadProps) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
-        console.log('made it here', response)
         const data = await response.blob()
         setPdf(data)
       } catch (error) {
@@ -46,7 +45,7 @@ export const PDFDownload = ({ foodItem }: PDFDownloadProps) => {
   }, [])
 
   return (
-    <HStack alignItems={'start'} spacing='8' p="4">
+    <HStack alignItems={'start'} spacing='8' p='4'>
       <Box h='full'>
         <Image src={receipt} alt='receipt-pic' />
       </Box>
