@@ -9,15 +9,18 @@ export interface CalendarOverviewProps {
   data: FoodItem[]
   splitBy: AggregableFoodKeys
   setActiveFoodItem: (foodItem: FoodItem) => void
+  year: number
 }
 
 export const CalendarOverview = ({
   data,
   splitBy,
   setActiveFoodItem,
+  year = 2024
 }: CalendarOverviewProps) => {
-  const aggregatedData = aggregateWeekData(data, splitBy)
-  const calendarData = generateHeatMapDataForYear(2024, aggregatedData)
+
+  const aggregatedData = aggregateWeekData(data, splitBy, year)
+  const calendarData = generateHeatMapDataForYear(year, aggregatedData)
 
   const legendLength = 1000
 

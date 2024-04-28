@@ -11,7 +11,7 @@ import {
   Select,
 } from '@northlight/ui'
 import type { AggregableFoodKeys, FoodItem } from '../types'
-import { uniqBy, prop, map, uniq } from 'ramda'
+import { uniqBy, prop, map, uniq, compose } from 'ramda'
 import { CalendarOverview } from './calendar-overview'
 import { PDFDownload } from './pdf-download'
 import capitalize from 'capitalize'
@@ -29,6 +29,10 @@ const getNbrTimesWentTowillys = (data: FoodItem[]) => {
   const uniqueWillysVisits = uniqBy(prop('date'), data)
 
   return uniqueWillysVisits.length
+}
+
+function getYear(dateString: string) {
+  return Number(dateString.split('-')[0])
 }
 
 export const labelMap = {
@@ -55,6 +59,10 @@ export const Overview = ({ data }: OverviewProps) => {
 
   const uniqueCategories = uniq(map(prop('category'), data))
   const uniqueProductnames = uniq(map(prop('productName'), data))
+  const uniqueYears = uniq(map(compose(getYear, prop('date')), data)).sort(
+    (a, b) => b - a
+  )
+  const [selectedYear, setSelectedYear] = useState(2024)
 
   return (
     <Stack justifyContent={'start'} spacing='4'>
@@ -110,11 +118,32 @@ export const Overview = ({ data }: OverviewProps) => {
         <Box w='max-content'>
           <Label size='md'>{labelMap[splitBy]}</Label>
         </Box>
-        <CalendarOverview
-          data={filterData(data, filter)}
-          splitBy={splitBy}
-          setActiveFoodItem={setActiveFoodItem}
-        />
+        <HStack w='full' spacing="0">
+          <Box w='full' h='380px'>
+            <CalendarOverview
+              data={filterData(data, filter)}
+              splitBy={splitBy}
+              setActiveFoodItem={setActiveFoodItem}
+              year={selectedYear}
+            />
+          </Box>
+          <Box w='150px'>
+            <FlipButtonGroup
+              size='sm'
+              variant='brand'
+              direction={'column'}
+              value={`${selectedYear}`}
+              onChange={(v) => setSelectedYear(parseFloat(v as any))}
+            >
+              {uniqueYears.map((year) => (
+                <FlipButton
+                  value={`${year}`}
+                  key={`Filter-${year}`}
+                >{`${year}`}</FlipButton>
+              ))}
+            </FlipButtonGroup>
+          </Box>
+        </HStack>
         <Box pt='8'>
           {activeFoodItem && <PDFDownload foodItem={activeFoodItem} />}
         </Box>

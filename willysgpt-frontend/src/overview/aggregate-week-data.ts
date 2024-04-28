@@ -12,24 +12,32 @@ export type CalendarData = {
 
 export const aggregateWeekData = (
   data: FoodItem[],
-  splitBy: AggregableFoodKeys
+  splitBy: AggregableFoodKeys,
+  year: number 
 ): CalendarData => {
-  const calendar = WEEK_DAYS.reduce((acc, day) => {
-    acc[day] = WEEK_NBRS.reduce((weekAcc, weekNbr) => {
-      weekAcc[weekNbr] = { value: 0 }
-      return weekAcc
-    }, {} as Record<number, any>)
-    return acc
-  }, {} as Record<string, any>)
+  const calendar: Record<string, Record<number, any>> = WEEK_DAYS.reduce(
+    (acc, day) => {
+      acc[day] = WEEK_NBRS.reduce((weekAcc, weekNbr) => {
+        weekAcc[weekNbr] = { value: 0 }
+        return weekAcc
+      }, {} as Record<number, any>)
+      return acc
+    },
+    {} as Record<string, any>
+  )
 
-  data.forEach((item) => {
-    const { weekNbr, weekDay } = getISOWeekDateInfo(item.date)
-    calendar[weekDay][weekNbr] = {
-      ...calendar[weekDay][weekNbr],
-      ...item,
-      value: item[splitBy] + (calendar[weekDay][weekNbr].value || 0),
-    }
-  })
+  data
+    .filter((item) => new Date(item.date).getFullYear() === year)
+    .forEach((item) => {
+      const { weekNbr, weekDay } = getISOWeekDateInfo(item.date)
+      calendar[weekDay] ??= {}
+      calendar[weekDay][weekNbr] ??= { value: 0 }
+      calendar[weekDay][weekNbr] = {
+        ...calendar[weekDay][weekNbr],
+        ...item,
+        value: item[splitBy] + (calendar[weekDay][weekNbr].value || 0),
+      }
+    })
 
   return calendar as unknown as CalendarData
 }
